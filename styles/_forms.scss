@@ -1,0 +1,35 @@
+.ls-form-input{
+	position:relative;
+	margin-top:calc(1rem + 12px);
+	& > label{
+		position:absolute;
+		pointer-events:none;
+		color:rgb(120,120,120);
+	}
+
+	& > .form-control ~ label{
+		top:7px;
+		left:7px;
+		transition:font-size 150ms, top 150ms;
+	}
+
+	& > .form-control:focus ~ label, &.non-empty > .form-control ~ label{
+		font-size:0.9rem;
+		top:calc(-1rem - 8px);
+	}
+
+	// Small forms have priority (put after)
+	// because form-control has to exist for form-control-sm in BS to even
+	// be styled correctly
+	& > .form-control-sm ~ label{
+		top:5px;
+		left:7px;
+		font-size:0.9rem;
+		transition:font-size 150ms, top 150ms;
+	}
+
+	& > .form-control-sm:focus ~ label, &.non-empty > .form-control-sm ~ label{
+		font-size:0.8rem;
+		top:calc(-1rem - 8px);
+	}
+}
