@@ -17,3 +17,7 @@ It is **very important** the label comes after the input.
 
 ## Valid Fields
 This works with textareas, text inputs (non-checkbox and non-radio), and select menus. The label **must come after the input**.
+
+## In Use
+![Animated field when empty](https://i.imgur.com/RDUPG0W.png)
+![Animated field with text](https://i.imgur.com/SApwrcc.png)
