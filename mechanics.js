@@ -55,13 +55,11 @@ let registerAnimatedField; // Will be defined as a function
 		validInputElement.addEventListener("change", () => {
 			console.log("Change");
 			if (!isInputEmpty(validInputElement)){
-				console.log("Not empty");
 				if (!divContainer.classList.contains("non-empty")){
 					divContainer.classList.add("non-empty");
 				}
 			}else{
 				// Does the class need to be removed?
-				console.log("Is empty");
 				if (divContainer.classList.contains("non-empty")){
 					divContainer.classList.remove("non-empty");
 				}
